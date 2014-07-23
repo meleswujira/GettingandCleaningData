@@ -111,6 +111,5 @@ read_tidy_set <- function(path_to_tidyset_file) {
 }
 ## uncomment below to read the tidyset inside the text file
 ##tidy_set <- read_tidy_set("./tidyset.txt")
-##
-write.table(tidy_set, file="./tidyaggFile.txt", sep="\t", row.names=FALSE)
+
 
