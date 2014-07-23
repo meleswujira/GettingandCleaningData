@@ -3,21 +3,7 @@ Description: a code book that describes the variables, the data, and any transfo
 
 ## Assumptions
 It is assumed that the Samsung data is unzipped into the working directory. The data therefore resides in the same folder as `run_analysis.R`
-
-In other words, it should be like this:
-```
- ---
-  |
-  |---run_analysis.R
-  |
-  |---UCI HAR Dataset/
-```
-
 ## Variables
-
-On lines 109-111 of run_analysis.R,
-
-```
 merged_data <- merge_data("UCI HAR Dataset")
 extracted_mean_std_data_set <- extract_mean_std(merged_data, "UCI HAR Dataset")
 melt_data_and_write_tidy_set(extracted_mean_std_data_set, "./tidyset.txt")
